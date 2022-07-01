@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/background_image.xml" value="0.1565" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/background_input.xml" value="0.1515" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/background_received_message.xml" value="0.13" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/background_sent_message.xml" value="0.1515" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/btn_background.xml" value="0.1565" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/btn_border.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/btn_next_background.xml" value="0.124" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/ic_add_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/ic_baseline_photo_24.xml" value="0.157" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable-v24/ic_round_notifications_24.xml" value="0.157" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/add_image_text_background.xml" value="0.1595" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/background_chat_input.xml" value="0.1585" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/bg_pin.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/bottom_nav_background.xml" value="0.124" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/btn_skip_background.xml" value="0.124" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/button_background.xml" value="0.124" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/edit_background.xml" value="0.152" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/ic_notification_circle.xml" value="0.16" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/ic_send_24.xml" value="0.1585" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/drawable/search_background.xml" value="0.13" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_alarm.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_chat.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_chat_doctor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_complete_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_enter_code.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_forget_password.xml" value="0.18" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_main_older.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_online_event.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_order_detials.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_password_reset.xml" value="0.14" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_sign_as.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_sign_up.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_splash_screen.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/activity_splash_slider.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/add_medical_record_bottom_sheet.xml" value="0.2" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/event_item.xml" value="0.33" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_add_order_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_calendar_view.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_chat.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_chat_old.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_choose_city_bottom_sheet.xml" value="0.33" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_create_task.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_current_order.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_done_order.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_from_internt.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_messagme.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_my_account.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_notifcation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_old_order.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_old_profile.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_older_home.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_pending_order.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_progress_order.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/fragment_suggested_order.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/item_alert.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/item_container_recent_conversion.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/item_contiener_received_message.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/item_continer_send_message.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/medical_record_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/notification_item.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/order_pending_item.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/requset_item.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/slide_layout.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/layout/success_add_dialog.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/menu/bottom_nav_menu_older.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Refg/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
