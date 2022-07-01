@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/card_request"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardElevation="@dimen/_12sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_12sdp"
+            >
+
+            <TextView
+                android:id="@+id/txt_number_docotr"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:backgroundTint="#ECECEC"
+                android:padding="@dimen/_4sdp"
+                tools:text ="5 / 10"
+                android:textAlignment="center"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="@dimen/_4sdp"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_service_type"
+                android:layout_weight="3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="الرعاية الصحية"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_12sdp"
+
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_order_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text ="8 اغسطس"
+            android:drawableEnd="@drawable/ic_location"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+
+            />
+        <TextView
+            android:id="@+id/txt_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text ="8 اغسطس"
+            android:drawableEnd="@drawable/ic_date"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/_8sdp"
+            >
+
+            <TextView
+                android:id="@+id/txt_order_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text ="8:00"
+                android:textColor="@color/mainColor"
+                android:textSize="@dimen/_16ssp"
+
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:drawablePadding="@dimen/_12sdp"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text ="موعد بدأ الطلب"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+
+                android:drawableEnd="@drawable/ic_ico___24___actions___time"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:drawablePadding="@dimen/_12sdp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            >
+
+            <TextView
+                android:id="@+id/txt_order_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text ="8:00"
+                android:textColor="@color/mainColor"
+                android:textSize="@dimen/_16ssp"
+
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:drawablePadding="@dimen/_12sdp"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text ="موعد انتهاء الطلب"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+
+                android:drawableEnd="@drawable/ic_ico___24___actions___time"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:drawablePadding="@dimen/_12sdp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_show_added_orders"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="العروض المضافة"
+            android:textSize="@dimen/_16ssp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

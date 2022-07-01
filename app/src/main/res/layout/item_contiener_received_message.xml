@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/_8sdp"
+
+    android:padding="@dimen/_4sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        tools:src ="@drawable/doctor"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+    <LinearLayout
+        android:id="@+id/linear_accept_or_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/imageProfile"
+        app:layout_constraintTop_toTopOf="@id/imageProfile"
+        android:background="@drawable/background_received_message"
+        >
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:layout_constraintWidth_max="wrap"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            tools:text="Hiiiiiiiiiiiiiiiiiii"
+            app:layout_constraintStart_toEndOf="@id/imageProfile"
+            app:layout_constraintTop_toTopOf="@id/imageProfile"
+            app:layout_constraintWidth_percent="0.75"
+
+            />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/message_image"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:scaleType="fitXY"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            tools:src="@drawable/ic_launcher_background"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_gravity="start"
+            app:riv_corner_radius="16dp"
+            app:riv_mutate_background="true"
+
+            android:visibility="gone"
+            app:riv_oval="false"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textColor="#C5C5C5"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@id/linear_accept_or_cancel"
+        app:layout_constraintTop_toBottomOf="@id/linear_accept_or_cancel"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
