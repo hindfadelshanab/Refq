@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeAction">
+
+    <fragment
+        android:id="@+id/homeAction"
+        android:name="com.devhind.qibla.refg.Older.Fragment.OldHomeFragment"
+        android:label="الرئيسية"
+        tools:layout="@layout/fragment_older_home" />
+    <fragment
+        android:id="@+id/OrdersAction"
+        android:name="com.devhind.qibla.refg.Older.Fragment.OldOrderFragment"
+        android:label="الطلبات"
+        tools:layout="@layout/fragment_old_order" />
+    <fragment
+        android:id="@+id/messageAction"
+        android:name="com.devhind.qibla.refg.Older.Fragment.ChatOldFragment"
+        android:label="المحادثات"
+        tools:layout="@layout/fragment_chat_old" />
+    <fragment
+        android:id="@+id/accountAction"
+        android:name="com.devhind.qibla.refg.Older.Fragment.OldProfileFragment"
+        android:label="حسابي"
+        tools:layout="@layout/fragment_old_profile" />
+</navigation>
