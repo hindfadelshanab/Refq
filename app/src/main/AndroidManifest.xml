@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.devhind.qibla.refg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:targetSdkVersion="21"
+        android:theme="@style/Theme.Refg">
+        <activity
+            android:name=".View.ChatDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.OnlineEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SignScreen.CompleteSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SignScreen.SignAsActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".View.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Older.OrderDetialsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Older.MainOlderActivity"
+
+            android:exported="true"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".View.SplashSliderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".View.PasswordResetActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".View.EnterCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SignScreen.SignUpActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- <activity -->
+        <!-- android:name=".SignScreen.SignUpActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> -->
+        <activity
+            android:name=".View.SignScreen.SignInActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".View.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name=".broadcastReceiver.AlarmBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".broadcastReceiver.AlarmService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+
+        <activity android:name=".Older.AlarmActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_round_notifications_24" />
+
+        <service
+            android:name=".firebase.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

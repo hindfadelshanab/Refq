@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "469637573737",
+    "project_id": "refg-74c1a",
+    "storage_bucket": "refg-74c1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469637573737:android:60767c868a39be520606f8",
+        "android_client_info": {
+          "package_name": "com.devhind.qibla.refg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469637573737-kjfrdl6msi1tpp4m732c0q0pprtv4som.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtSBlqbxoqnwUwp7VYFuFa5gReTCTKIpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469637573737-kjfrdl6msi1tpp4m732c0q0pprtv4som.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
