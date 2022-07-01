@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:background="@drawable/sheet_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_16sdp">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:text="إضافة سجل طبي"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="MissingPrefix" />
+
+        <EditText
+            android:id="@+id/input_medical_record"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="#EFEFEF"
+            android:gravity="top"
+            android:hint="يرجى كتابة التفاصيل هنا"
+            android:padding="@dimen/_8sdp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@color/white"
+                android:text="الغاء"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/btn_add_medical_record"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/button_background"
+                android:text="إضافة "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
