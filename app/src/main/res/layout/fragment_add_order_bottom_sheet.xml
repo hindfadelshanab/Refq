@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/sheet_background"
+    android:layout_marginTop="@dimen/_12sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_gravity="end"
+    >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:visibility="gone"
+
+            />
+        <TextView
+            android:id="@+id/img_arrow_back"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اختر تاريخ الحجز"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/_24sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/tajawal_medium"
+
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_16sdp"
+
+
+            android:textStyle="bold"
+
+
+            />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@id/img_arrow_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_c"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            app:layout_constraintEnd_toEndOf="@id/view_1"
+            app:layout_constraintTop_toBottomOf="@id/view_1"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_12sdp"
+            />
+
+        <EditText
+            android:id="@+id/input_order_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/txt_c"
+            app:layout_constraintTop_toTopOf="@id/txt_c"
+            app:layout_constraintStart_toStartOf="@id/view_1"
+            android:background="@drawable/edit_background"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="غزة"
+            android:textAlignment="center"
+
+
+
+
+
+            />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_s"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/service"
+            app:layout_constraintEnd_toEndOf="@id/txt_c"
+            app:layout_constraintTop_toBottomOf="@id/txt_c"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_16sdp"
+            />
+
+        <EditText
+            android:id="@+id/input_service_type"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toStartOf="@id/txt_s"
+            app:layout_constraintTop_toTopOf="@id/txt_s"
+            app:layout_constraintStart_toStartOf="@id/view_1"
+            android:background="@drawable/edit_background"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="رعاية صحية"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_s_d"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_time"
+            app:layout_constraintEnd_toEndOf="@id/txt_s"
+            app:layout_constraintTop_toBottomOf="@id/txt_s"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:id="@+id/input_start_Time"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/txt_s_d"
+            app:layout_constraintTop_toTopOf="@id/txt_s_d"
+            app:layout_constraintStart_toStartOf="@id/view_1"
+            android:background="@drawable/edit_background"
+            android:clickable="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:drawableStart="@drawable/ic_ico___24___actions___time"
+            android:drawablePadding="@dimen/_4sdp"
+            android:padding="@dimen/_4sdp"
+            android:text="08:00 صباحا"
+            android:textAlignment="center"
+
+
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_e_d"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:text="موعد الانتهاء"
+            app:layout_constraintEnd_toEndOf="@id/txt_s_d"
+            app:layout_constraintTop_toBottomOf="@id/txt_s_d"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:id="@+id/input_end_Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/txt_e_d"
+            app:layout_constraintTop_toTopOf="@id/txt_e_d"
+            app:layout_constraintStart_toStartOf="@id/view_1"
+            android:background="@drawable/edit_background"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_ico___24___actions___time"
+            android:drawablePadding="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:padding="@dimen/_4sdp"
+            android:text="08:00 صباحا"
+            android:clickable="true"
+
+            android:textAlignment="center"
+
+
+
+
+
+            />
+
+
+
+        <CalendarView
+            android:id="@+id/simpleCalendarView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_12sdp"
+
+            app:layout_constraintTop_toBottomOf="@id/txt_e_d"
+            app:layout_constraintEnd_toEndOf="@id/view_1"
+            app:layout_constraintStart_toStartOf="@id/view_1"
+            android:layout_height="fill_parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back_from_add_order"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="تراجع"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintEnd_toStartOf="@id/btn_add_order"
+            app:layout_constraintTop_toBottomOf="@id/simpleCalendarView"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_order"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="إضافة طلب"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+
+            android:background="@drawable/button_background"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toEndOf="@id/btn_back_from_add_order"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@id/simpleCalendarView"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

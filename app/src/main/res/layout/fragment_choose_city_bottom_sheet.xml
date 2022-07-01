@@ -1,0 +1,142 @@
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/sheet_background"
+    android:layout_marginTop="@dimen/_12sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="end"
+        android:paddingEnd="@dimen/_16sdp"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="اختر المدينة"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            fontPath="fonts/nunito_light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="حدد موقعك من قائمة المدن"
+            android:textColor="@android:color/black"
+            android:alpha="0.8"
+            android:textSize="18sp"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#8A8686"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+
+            />
+        <TextView
+            fontPath="fonts/nunito_light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="جميع المدن"
+            android:textColor="@android:color/black"
+            android:alpha="0.8"
+            android:textSize="18sp"
+            tools:ignore="MissingPrefix" />
+
+        <RadioGroup
+            android:id="@+id/radioCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:buttonTint="@color/mainColor"
+            android:gravity="end"
+            android:orientation="vertical"
+            >
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city1"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city2"
+
+
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/city3"
+
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city4"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city5"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city6"
+
+                />
+
+
+
+
+
+
+
+
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_next"
+            android:background="@drawable/button_background"
+
+            android:layout_gravity="center"
+            android:text="التالي"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_12sdp"
+            />
+
+    </LinearLayout>
+</ScrollView>

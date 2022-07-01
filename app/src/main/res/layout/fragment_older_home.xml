@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/appbar_bacground">
+
+
+        <!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:toolbarId="@+id/toolbar"-->
+        <!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+
+        <!--            app:contentScrim="?attr/colorPrimary">-->
+
+
+        <!--            <androidx.appcompat.widget.Toolbar-->
+        <!--                android:id="@+id/toolbar"-->
+        <!--                app:title="رفق"-->
+        <!--                app:titleTextColor="@color/white"-->
+        <!--              -->
+        <!--                android:textDirection="firstStrongRtl"-->
+        <!--                android:layout_height="?attr/actionBarSize"-->
+        <!--                android:layout_width="match_parent" />-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/tajawal_medium"-->
+<!--            android:text="رفق "-->
+<!--            android:layout_marginTop="@dimen/_16sdp"-->
+<!--            android:layout_marginEnd="@dimen/_16sdp"-->
+<!--            android:textAlignment="viewEnd"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_20ssp"-->
+
+<!--            />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="اهلا بك"
+            android:layout_marginTop="@dimen/_8sdp"
+
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:hint="البحث"
+            android:paddingEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:background="@drawable/search_background"
+
+
+            android:drawableStart="@drawable/ic_baseline_search_24"
+
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_12sdp"
+            tools:context=".Older.Fragment.OldHomeFragment">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+
+
+                android:text="@string/txt_events"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+
+
+                />
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/_140sdp"-->
+            <!--                android:layout_marginStart="@dimen/_12sdp"-->
+            <!--                tools:listitem="@layout/event_item"-->
+
+
+            <!--                />-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+
+                android:layout_marginTop="@dimen/_8sdp"
+                app:cardBackgroundColor="#F8F8F8"
+                app:cardCornerRadius="@dimen/_12sdp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:fontFamily="@font/tajawal_medium"
+                            android:text="فعاليات"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_22ssp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/event_icon"
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:fontFamily="@font/tajawal_regular"
+                        android:text="قم بالانضمام الى فعاليات ومناسبات او حديث مع العديد من الأشخاص عن طريقة اضافة اسم الغرفة"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <Button
+                        android:id="@+id/btn_subscrib"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_24sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_24sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@drawable/button_background"
+                        android:drawableEnd="@drawable/ic_add_black_24dp"
+                        android:drawablePadding="@dimen/_32sdp"
+                        android:drawableTint="@color/white"
+                        android:fontFamily="@font/tajawal_medium"
+                        android:paddingEnd="@dimen/_70sdp"
+                        android:text="اشتراك"
+                        android:textAlignment="viewEnd"
+                        android:textSize="@dimen/_16ssp"
+
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+
+
+                android:text="@string/txt_service"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/conss2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center"
+
+                    android:orientation="vertical"
+
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/image2"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_160sdp"
+                        android:src="@drawable/home_service"
+                        android:tint="#64000000"
+                        app:layout_constraintEnd_toEndOf="@id/conss2"
+                        app:layout_constraintStart_toStartOf="@id/conss2"
+
+                        app:layout_constraintTop_toTopOf="@id/conss2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_24sdp"
+                        android:gravity="bottom"
+                        android:text="@string/home_service"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/image2"
+                        app:layout_constraintEnd_toEndOf="@id/image2"
+                        app:layout_constraintStart_toStartOf="@id/image2" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/conss"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center"
+
+                    android:orientation="vertical"
+
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/image1"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_160sdp"
+                        android:src="@drawable/health_service"
+                        android:tint="#64000000"
+                        app:layout_constraintEnd_toEndOf="@id/conss"
+                        app:layout_constraintStart_toStartOf="@id/conss"
+
+                        app:layout_constraintTop_toTopOf="@id/conss" />
+
+                    <TextView
+                        android:id="@+id/txt_health_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_24sdp"
+                        android:gravity="bottom"
+                        android:text="الرعاية الصحية"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/image1"
+                        app:layout_constraintEnd_toEndOf="@id/image1"
+                        app:layout_constraintStart_toStartOf="@id/image1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

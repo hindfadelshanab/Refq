@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_46sdp"
+        android:scaleType="fitXY"
+
+        android:layout_gravity="center"
+        android:src="@drawable/logorefg" />
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="@dimen/_12sdp"-->
+<!--        android:text="@string/txt_refg"-->
+<!--        android:textColor="#1D3557"-->
+<!--        android:textSize="@dimen/_24ssp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="@dimen/_16sdp"-->
+<!--        android:text="@string/txt_welcom"-->
+<!--        android:textColor="#1D3557"-->
+<!--        android:textSize="@dimen/_20ssp"-->
+<!--        android:textStyle="bold" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:textColor="@color/black"
+        android:text="@string/txt_name"
+        android:textSize="@dimen/_18ssp" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:textAlignment="viewEnd"
+
+        android:background="#F5F5F5"
+        android:padding="@dimen/_8sdp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:textColor="@color/black"
+
+        android:text="@string/txt_email"
+        android:textSize="@dimen/_18ssp" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="#F5F5F5"
+        android:textAlignment="viewEnd"
+
+        android:padding="@dimen/_8sdp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/txt_password"
+        android:textColor="@color/black"
+
+        android:textSize="@dimen/_18ssp" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:inputType="textPassword"
+        android:textAlignment="viewEnd"
+        android:background="#F5F5F5"
+        android:padding="@dimen/_8sdp" />
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:visibility="gone"
+        android:text="العنوان"
+        android:textSize="@dimen/_18ssp" />
+
+    <EditText
+        android:id="@+id/inputAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="#F5F5F5"
+        android:padding="@dimen/_8sdp" />
+
+    <TextView
+        android:id="@+id/txt_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:visibility="gone"
+        android:text="العمر"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/_18ssp" />
+
+    <EditText
+        android:id="@+id/inputAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="#F5F5F5"
+        android:visibility="gone"
+        android:padding="@dimen/_8sdp" />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/select_user"-->
+<!--        android:textSize="@dimen/_18ssp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginEnd="@dimen/_16sdp"-->
+
+<!--        android:layout_marginTop="@dimen/_12sdp"-->
+
+<!--        />-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radio"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginEnd="@dimen/_16sdp"-->
+
+<!--        android:gravity="end"-->
+
+<!--        >-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/older"-->
+<!--            android:paddingEnd="@dimen/_16sdp"-->
+<!--            android:textColor="@color/black"-->
+<!--            />-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/doctor"-->
+<!--            android:textColor="@color/black"-->
+
+<!--            />-->
+<!--    </RadioGroup>-->
+
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:id="@+id/buttonSignUp"
+
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/mainColor"
+
+            android:text="@string/txt_creat_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_16sdp"
+            app:cornerRadius="@dimen/_8sdp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+
+            />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/textSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/txt_sing_in"
+
+
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/mainColor"
+
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp">
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="#545454"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:text="@string/txt_sign_up_by"
+            android:textSize="@dimen/_14ssp" />
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="#545454"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/whatsapp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/facebook"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/google"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

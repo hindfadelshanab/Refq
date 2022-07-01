@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<ScrollView android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
+
+
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/appbar"-->
+<!--        android:layout_width="match_parent"-->
+
+<!--        android:layout_height="@dimen/_50sdp"-->
+<!--        android:background="@drawable/appbar_bacground">-->
+
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="end"-->
+<!--                android:orientation="horizontal">-->
+
+<!--&lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="start"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginEnd="@dimen/_160sdp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    android:src="@drawable/ic_arrow_left"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:tint="@color/white" />&ndash;&gt;-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:padding="@dimen/_4sdp"-->
+<!--                    android:textAlignment="viewEnd"-->
+<!--                    android:layout_marginEnd="@dimen/_24sdp"-->
+<!--                    android:gravity="end"-->
+<!--                    android:text="الملف الشخصي"-->
+
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_14sdp"-->
+
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.appcompat.widget.Toolbar>-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="@dimen/_16sdp"
+
+        android:paddingTop="@dimen/_40sdp"
+        >
+
+        <ImageView
+            android:id="@+id/img_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_user_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_old_name"
+            android:layout_width="0dp"
+            android:textAlignment="viewEnd"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toStartOf="@id/img_person"
+            app:layout_constraintStart_toEndOf="@id/txt_old_age"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="محمد احمد" />
+
+        <TextView
+            android:id="@+id/txt_old_age"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#ECECEC"
+            android:padding="@dimen/_4sdp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text=" عام"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_old_adderss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@id/txt_old_name"
+            app:layout_constraintStart_toStartOf="@id/txt_old_name"
+            app:layout_constraintTop_toBottomOf="@id/txt_old_name"
+            tools:text="غزة,  مفترق الصناعة , عمارة المعتز 3"
+
+            />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/txt_old_name"
+            app:layout_constraintStart_toStartOf="@id/txt_old_name"
+            app:layout_constraintTop_toBottomOf="@id/txt_old_adderss" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="السجل الطبي"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <TextView
+            android:id="@+id/txt_add_more_medical_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="@dimen/_4sdp"
+            android:text="اضف المزيد"
+            android:textColor="#457B9D"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:cardCornerRadius="8dp"
+          app:cardBackgroundColor="#EFEFEF"
+
+            app:cardElevation="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_add_more_medical_record">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/medicalRecordeRc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:background="#EFEFEF"
+
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/txt_empty_recycle_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                android:text="مثال \ هذا المريض يعاني من مرض السكري"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="التنبيهات"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+        <TextView
+            android:id="@+id/txt_add_more_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="@dimen/_4sdp"
+            android:text="اضف المزيد"
+            android:textColor="#457B9D"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#EFEFEF"
+
+            android:layout_marginBottom="@dimen/_12sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_add_more_alarm"
+
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/alertRc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                android:background="#EFEFEF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_add_more_alarm"
+
+
+                />
+            <TextView
+                android:id="@+id/txt_empty_alert_recycle_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_add_more_alarm"
+
+                android:background="#EFEFEF"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:text="اضف الادوية التي يتناولها المريض بانتظام"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

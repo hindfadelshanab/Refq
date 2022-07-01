@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_46sdp"
+        android:src="@drawable/logorefg" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:text="@string/txt_refg"
+        android:textColor="#1D3557"
+        android:textSize="@dimen/_24ssp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:textColor="@color/black"
+        android:text="@string/txt_email"
+        android:textSize="@dimen/_18ssp" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="#F5F5F5"
+        android:padding="@dimen/_8sdp"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/txt_password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="4dp"
+
+
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="#F5F5F5"
+        android:padding="@dimen/_8sdp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txt_forgets_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:padding="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/txt_forgert_password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/mainColor"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/txt_sing_in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/_8sdp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+
+            />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textCreateNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/create_new_account"
+        android:textStyle="bold"
+        android:padding="@dimen/_4sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/mainColor"
+        android:layout_gravity="center"
+
+        />
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnSinnIn"-->
+<!--        android:layout_width="@dimen/_220sdp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="@dimen/_32sdp"-->
+<!--        android:background="@drawable/button_background"-->
+<!--        android:backgroundTint="@color/mainColor"-->
+<!--        android:padding="@dimen/_8sdp"-->
+<!--        android:text="@string/txt_sing_in"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_18ssp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_46sdp"
+            android:text="@string/txt_sing_in"
+            android:textColor="#242424"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16ssp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/secodryColor"
+            android:padding="@dimen/_8sdp"
+            android:text="دكتور"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16ssp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/mainColor"
+            android:padding="@dimen/_8sdp"
+            android:text="كبير سن"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+    </LinearLayout>
+</LinearLayout>
